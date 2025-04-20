@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@layer utilities {
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  .font-opensans {
+    font-family: var(--font-opensans);
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-background: #f3fcfa;
+  --color-primary: #F05D62;
+  --color-primary-hover: #D94C51;
+  --color-secondary: #61C4B4;
+  --color-secondary-hover: #57B0A2;
+  --color-secondary-light: #97F3E4;
+}
