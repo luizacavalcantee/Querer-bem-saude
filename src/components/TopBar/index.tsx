@@ -56,10 +56,10 @@ export default function TopBar() {
           Início
         </span>
         <span
-          onClick={() => handleLinkClick("Sobre")}
-          className={getLinkClasses("Sobre")}
+          onClick={() => handleLinkClick("Explore")}
+          className={getLinkClasses("Explore")}
         >
-          Sobre
+          Explore
         </span>
         <span
           onClick={() => handleLinkClick("Contato")}

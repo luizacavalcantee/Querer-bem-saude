@@ -47,8 +47,8 @@ export default function Footer() {
     switch (linkName) {
       case "":
         return "Início";
-      case "sobre":
-        return "Sobre";
+      case "explore":
+        return "Explore";
       case "contato":
         return "Contato";
       case "blog":
@@ -71,7 +71,7 @@ export default function Footer() {
         <section className="w-full px-[5%] mx-auto gap-6 flex-col flex">
           <div className="px-[5%] h-fit border-b pb-4">
             <nav className="flex justify-between font-montserrat font-medium gap-8 text-lg">
-              {["", "Sobre", "Contato", "Blog"].map((link) => (
+              {["", "Explore", "Contato", "Blog"].map((link) => (
                 <Link
                   key={link}
                   href={`/${link}`}
