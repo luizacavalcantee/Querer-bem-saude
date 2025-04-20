@@ -9,7 +9,7 @@ interface EventCardProps {
   linkUrl: string;
 }
 
-export function EventCard({ imageUrl, title, date, location, linkUrl }: EventCardProps) {
+export default function EventCard({ imageUrl, title, date, location, linkUrl }: EventCardProps) {
   return (
     <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="block">
       <div className="flex flex-col justify-between bg-background h-full p-4 rounded-2xl shadow-md hover:scale-105 transition-transform duration-200">

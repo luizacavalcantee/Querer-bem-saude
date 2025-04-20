@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import { Logo } from "@/assets";
-import { useState } from "react";
+import { usePathname,useRouter } from "next/navigation";
 
 function TopBar() {
-  const [activeLink, setActiveLink] = useState("início");
+  const router = useRouter();
+  const pathname = usePathname();
 
   const baseLinkClasses = `
     relative 
@@ -27,7 +28,7 @@ function TopBar() {
   `;
 
   const getLinkClasses = (linkName: string) => {
-    const isActive = activeLink === linkName;
+    const isActive = pathname === `/${linkName}` || (linkName === "" && pathname === "/");
     return `
       ${baseLinkClasses}
       ${isActive ? 'text-primary-hover' : 'text-primary'}
@@ -35,8 +36,12 @@ function TopBar() {
     `;
   };
 
+  const handleLinkClick = (linkName: string) => {
+    router.push(`/${linkName}`);
+  };
+
   return (
-    <div className="flex items-center bg-background justify-between py-4 px-12 shadow-xl z-10">
+    <div className="flex items-center bg-background justify-between py-4 px-12 shadow-xl">
       <Image 
         src={Logo} 
         alt="Logo Querer Bem" 
@@ -45,32 +50,32 @@ function TopBar() {
       
       <nav className="flex font-montserrat font-medium gap-8 text-lg">
         <span
-          onClick={() => setActiveLink("início")}
-          className={getLinkClasses("início")}
+          onClick={() => handleLinkClick("")}
+          className={getLinkClasses("")}
         >
           Início
         </span>
         <span
-          onClick={() => setActiveLink("sobre")}
-          className={getLinkClasses("sobre")}
+          onClick={() => handleLinkClick("Sobre")}
+          className={getLinkClasses("Sobre")}
         >
           Sobre
         </span>
         <span
-          onClick={() => setActiveLink("contato")}
-          className={getLinkClasses("contato")}
+          onClick={() => handleLinkClick("Contato")}
+          className={getLinkClasses("Contato")}
         >
           Contato
         </span>
         <span
-          onClick={() => setActiveLink("blog")}
-          className={getLinkClasses("blog")}
+          onClick={() => handleLinkClick("Blog")}
+          className={getLinkClasses("Blog")}
         >
           Blog
         </span>
       </nav>
     </div>
   );
-}
+  }
 
 export default TopBar;

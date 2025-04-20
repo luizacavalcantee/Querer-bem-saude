@@ -1,7 +1,9 @@
-export function Contato() {
+import TopBar from "@/components/TopBar";
+
+export default function Contato() {
     return (
       <div className="bg-background">
-        <h1 className="text-8xl text-black">Contato</h1>
+        <TopBar/>
       </div>
     );
   }

@@ -1,7 +1,9 @@
-export function Blog() {
+import TopBar from "@/components/TopBar";
+
+export default function Blog() {
     return (
       <div className="bg-background">
-        <h1 className="text-8xl text-black">Blog</h1>
+        <TopBar/>
       </div>
     );
   }
