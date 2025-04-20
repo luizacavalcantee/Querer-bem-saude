@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Logo } from "../../assets";
+import { Logo } from "@/assets";
 import { useState } from "react";
 
 function TopBar() {
@@ -40,9 +40,7 @@ function TopBar() {
       <Image 
         src={Logo} 
         alt="Logo Querer Bem" 
-        className="h-16 hover:scale-110 transition-transform duration-200 cursor-pointer" 
-        width={64} // Ajuste o tamanho conforme necessário
-        height={64} // Ajuste o tamanho conforme necessário
+        className="h-16 w-min hover:scale-110 transition-transform duration-200 cursor-pointer" 
       />
       
       <nav className="flex font-montserrat font-medium gap-8 text-lg">

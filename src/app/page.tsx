@@ -133,14 +133,14 @@ export default function Home() {
           <p className="font-medium">Saiba mais acessando a seção <strong className="font-bold text-primary-hover">SOBRE</strong> e me conta como posso lhe ajudar</p>
         </div>
         <div className="p-10 rounded-4xl border border-gray-200 shadow-md hover:scale-110 transition-transform duration-200">
-          <Image src={Logo} alt="Logo Querer Bem" className="max-w-80" width={200} height={200} />
+          <Image src={Logo} alt="Logo Querer Bem" className="w-80" />
         </div>
       </section>
 
       <section className="bg-background flex-col items-center justify-center pt-10 pb-40">
         <div className="flex flex-col items-center justify-center gap-4 text-gray-800 mb-10">
           <HeartHandshake size={45} />
-          <h1 className="text-5xl font-medium font-inter">Conexões</h1>
+          <h1 className={`text-5xl font-medium {inter.className}`}>Conexões</h1>
         </div>
         <div className="flex items-center justify-center gap-12 px-20">
           <Image src={Conexoes} alt="Foto com paciente" className="w-160 border border-gray-100 shadow rounded-2xl" width={640} height={480} />
