@@ -1,8 +1,8 @@
-import TopBar from "@/components/TopBar";
-import { Aspas, Capa, Conexoes, Logo, Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8, Card9, Card10, Card11, Card12 } from "@/assets";
+import TopBar from "@/components/TopBar/index";
+import { Aspas, Capa, Conexoes, Logo, Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8, Card9, Card10, Card11, Card12 } from "@/assets/index";
 import { Megaphone, HeartHandshake } from 'lucide-react';
-import EventCard from "@/components/EventCard";
-import Footer from "@/components/Footer";
+import EventCard from "@/components/EventCard/index";
+import Footer from "@/components/Footer/index";
 import Image from "next/image";
 
 const eventsData = [

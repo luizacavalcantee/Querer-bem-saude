@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Logo } from "@/assets";
+import { Logo } from "@/assets/index";
 import { usePathname, useRouter } from "next/navigation";
 
 export default function TopBar() {

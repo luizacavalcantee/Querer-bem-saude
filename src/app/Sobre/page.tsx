@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import TopBar from "@/components/TopBar";
+import Footer from "@/components/Footer/index";
+import TopBar from "@/components/TopBar/index";
 
 export default function Sobre() {
   return (
