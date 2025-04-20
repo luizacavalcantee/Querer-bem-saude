@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { LogoRosa } from "../../assets/index";
-import { Instagram, Mail, MapPin } from "lucide-react";
+import { Instagram, Mail, MapPin, LinkedinIcon } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Footer() {
-  const [activeLink, setActiveLink] = useState("início");
+  const router = useRouter();
+  const pathname = usePathname();
 
   const baseLinkClasses = `
       relative 
@@ -29,7 +30,7 @@ export default function Footer() {
     `;
 
   const getLinkClasses = (linkName: string) => {
-    const isActive = activeLink === linkName;
+    const isActive = pathname === `/${linkName}` || (linkName === "" && pathname === "/");
     return `
         ${baseLinkClasses}
         ${isActive ? "text-primary-hover" : "text-primary"}
@@ -37,40 +38,43 @@ export default function Footer() {
       `;
   };
 
+  const handleLinkClick = (linkName: string) => {
+    router.push(`/${linkName}`);
+  };
+
   return (
-    <footer className="bg-primary text-white py-8 px-4">
-      <div className="container mx-auto flex font-montserrat gap-8">
+    <footer className="bg-primary text-white pt-8 px-4">
+      <div className="container mx-auto flex font-montserrat">
         <Image
           src={LogoRosa}
           alt="Logo Querer Bem"
-          className="w-40 rounded-full"
-          width={160} // Ajuste o tamanho conforme necessário
-          height={160} // Ajuste o tamanho conforme necessário
+          className="rounded-full hover:scale-110 transition-transform duration-200"
+          width={260}
         />
 
-        <section className="w-full px-[8%] mx-auto gap-6 flex-col flex">
-          <div className="px-[8%] h-fit border-b pb-4">
-            <nav className="flex justify-between font-montserrat font-medium gap-8  text-lg">
+        <section className="w-full px-[5%] mx-auto gap-6 flex-col flex">
+          <div className="px-[5%] h-fit border-b pb-4">
+            <nav className="flex justify-between font-montserrat font-medium gap-8 text-lg">
               <span
-                onClick={() => setActiveLink("início")}
-                className={getLinkClasses("início")}
+                onClick={() => handleLinkClick("")}
+                className={getLinkClasses("")}
               >
                 Início
               </span>
               <span
-                onClick={() => setActiveLink("sobre")}
+                onClick={() => handleLinkClick("Sobre")}
                 className={getLinkClasses("sobre")}
               >
                 Sobre
               </span>
               <span
-                onClick={() => setActiveLink("contato")}
+                onClick={() => handleLinkClick("Contato")}
                 className={getLinkClasses("contato")}
               >
                 Contato
               </span>
               <span
-                onClick={() => setActiveLink("blog")}
+                onClick={() => handleLinkClick("Blog")}
                 className={getLinkClasses("blog")}
               >
                 Blog
@@ -78,18 +82,23 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex flex-col w-fit justify-center gap-4 pl-[8%]">
-            <a href="#" target="blank" className="flex gap-2">
+          <div className="flex flex-col w-fit justify-center gap-4 pl-[5%]">
+            <a href="https://www.instagram.com/quererbemsaude?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" className="flex gap-2 items-center">
               <Instagram size={28} />
               <p>Instagram</p>
             </a>
+            
+            <a href="https://www.linkedin.com/company/querer-bem-sa%C3%BAde/" target="blank" className="flex gap-2 items-center">
+              <LinkedinIcon size={28} />
+              <p className="pt-1">Linkedin</p>
+            </a>
 
-            <a href="#" target="blank" className="flex gap-2">
+            <a href="mailto:polyana@quererbemsaude.com.br" target="blank" className="flex gap-2 items-center">
               <Mail size={28} />
               <p>polyana@quererbemsaude.com.br</p>
             </a>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <MapPin size={28} />
               <p>Recife, PE</p>
             </div>
