@@ -163,7 +163,7 @@ export default function Inicio() {
           {eventsData.map((event) => (
             <EventCard
               key={event.id}
-              imageUrl={event.imageUrl}
+              imageUrl={event.imageUrl.src}
               title={event.title}
               date={event.date}
               location={event.location}
