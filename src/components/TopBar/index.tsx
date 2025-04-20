@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { Logo } from "@/assets";
-import { usePathname,useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
-function TopBar() {
+export default function TopBar() {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -76,6 +76,4 @@ function TopBar() {
       </nav>
     </div>
   );
-  }
-
-export default TopBar;
+}
