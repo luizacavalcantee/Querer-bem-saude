@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={montserrat.className}>
+      <body className={inter.className}>
         {children}
       </body>
     </html>

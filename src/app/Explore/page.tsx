@@ -110,7 +110,7 @@ export default function Explore() {
     <div className="bg-background">
       <TopBar/>
       <section className="bg-secondary flex flex-col items-center justify-center gap-12 py-20">
-        <h1 className="text-5xl font-medium mb-8 font-inter text-gray-800">Momentos para compartilhar e aprender</h1>
+        <h1 className="text-5xl font-medium mb-2 font-inter text-white">Momentos para compartilhar e aprender</h1>
         <div className="grid grid-cols-4 gap-8 px-20">
           {eventsData.map((event) => (
             <EventCard
@@ -125,7 +125,7 @@ export default function Explore() {
         </div>
       </section>
 
-      <section className="bg-background flex-col items-center justify-center pt-10 pb-40">
+      <section className="bg-background flex-col items-center justify-center pt-20 pb-24">
         <div className="flex flex-col items-center justify-center gap-4 text-gray-800 mb-10">
           <HeartHandshake size={45} />
           <h1 className={`text-5xl font-medium {inter.className}`}>Conexões</h1>
