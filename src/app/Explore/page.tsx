@@ -36,7 +36,7 @@ const eventsData = [
     imageUrl: Card4,
     title: "Segurança do Paciente em pauta",
     date: "23 de setembro de 2024",
-    location: "Istituto Valquírea Arenas",
+    location: "Instituto Valquírea Arenas",
     linkUrl: "https://www.youtube.com/watch?feature=shared&v=WNqA1Z5ymeY"
   },
   {
