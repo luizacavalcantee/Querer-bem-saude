@@ -16,6 +16,10 @@ import Card9 from './Card9.png';
 import Card10 from './Card10.png';
 import Card11 from './Card11.png';
 import Card12 from './Card12.png';
+import Computer from './Computador.png';
+import AcessoVascular from './Acesso-vascular.png';
+import Education from './Education.png';
+import POP from './POP.png';
 
 export {
     Aspas,
@@ -36,4 +40,8 @@ export {
     Card10,
     Card11,
     Card12,
+    Computer,
+    AcessoVascular,
+    Education,
+    POP,
 };
