@@ -1,9 +1,9 @@
+import Aspas from './aspas.svg';
+import Capa from './Capa.png';
+import Conexoes from './conexoes.png';
 import Logo from './logo.svg';
-import Capa from './capa.jpg';
 import LogoAzul from './logo-azul.svg';
 import LogoRosa from './logo-rosa.svg';
-import Conexoes from './conexoes.png';
-import Aspas from './aspas.svg';
 import Card1 from './Card1.png';
 import Card2 from './Card2.png';
 import Card3 from './Card3.png';
@@ -17,4 +17,23 @@ import Card10 from './Card10.png';
 import Card11 from './Card11.png';
 import Card12 from './Card12.png';
 
-export { Logo, Capa, LogoAzul, LogoRosa, Conexoes, Aspas, Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8, Card9, Card10, Card11, Card12 };
+export {
+    Aspas,
+    Capa,
+    Conexoes,
+    Logo,
+    LogoAzul,
+    LogoRosa,
+    Card1,
+    Card2,
+    Card3,
+    Card4,
+    Card5,
+    Card6,
+    Card7,
+    Card8,
+    Card9,
+    Card10,
+    Card11,
+    Card12,
+};
