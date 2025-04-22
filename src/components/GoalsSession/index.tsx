@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function GoalsSession() {
     return (
-        <section className="bg-background flex flex-col items-center justify-center gap-8 px-20 pb-30">
+        <section className="bg-background flex flex-col items-center justify-center gap-8 px-12 pb-30">
         <section className="flex w-full h-79 rounded-2xl border-2 border-light-gray overflow-hidden gap-8">
           <div className="flex flex-col w-1/2 py-10 pl-10">
             <h2 className="text-2xl font-semibold mb-auto">Consultoria em saúde</h2>
@@ -52,7 +52,7 @@ export default function GoalsSession() {
           </div>
 
           <div className="flex-1 relative mr-8">
-            <Image src={AcessoVascular} alt="Acesso vascular" className="w-70 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <Image src={AcessoVascular} alt="Acesso vascular" className="w-72 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
             <div className="w-121 h-121 bg-[#d0d5dd] rounded-full opacity-30 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function GoalsSession() {
           </div>
 
           <div className="flex-1 relative mr-8">
-            <Image src={POP} alt="Acesso vascular" className="w-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <Image src={POP} alt="Acesso vascular" className="w-90 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
             <div className="w-121 h-121 bg-[#d0d5dd] rounded-full opacity-30 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function GoalsSession() {
           </div>
 
           <div className="flex-1 relative mr-8">
-            <Image src={Education} alt="Acesso vascular" className="w-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <Image src={Education} alt="Acesso vascular" className="w-92 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
             <div className="w-121 h-121 bg-[#d0d5dd] rounded-full opacity-30 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             </div>
           </div>

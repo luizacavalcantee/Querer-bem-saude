@@ -20,6 +20,8 @@ import Computer from './Computador.png';
 import AcessoVascular from './Acesso-vascular.png';
 import Education from './Education.png';
 import POP from './POP.png';
+import Polyana from './Polyana.jpg';
+import PolyanaCircle from './Polyana-circle.png';
 
 export {
     Aspas,
@@ -44,4 +46,6 @@ export {
     AcessoVascular,
     Education,
     POP,
+    Polyana,
+    PolyanaCircle,
 };
