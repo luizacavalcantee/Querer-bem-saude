@@ -18,7 +18,7 @@ export default function EventCard({ imageUrl, title, date, location, linkUrl }: 
             src={imageUrl} 
             alt={title} 
             fill
-            className="rounded-2xl object-cover" 
+            className="rounded-xl object-cover" 
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>

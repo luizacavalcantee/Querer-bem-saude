@@ -41,7 +41,7 @@ export default function TopBar() {
   };
 
   return (
-    <div className="flex items-center bg-background justify-between py-4 px-12 shadow-xl">
+    <div className="flex items-center bg-background justify-between py-4 px-12 shadow-lg relative z-10">
       <Image 
         src={Logo} 
         alt="Logo Querer Bem" 

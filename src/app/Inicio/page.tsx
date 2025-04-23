@@ -58,7 +58,7 @@ export default function Inicio() {
             me conta como posso lhe ajudar
           </p>
           <h1 className="text-primary text-3xl font-semibold text-start">
-            Como a QUERER BEM SAÚDE pode fazer parte da sua história?
+            Como QUERER BEM SAÚDE pode fazer parte da sua história?
           </h1>
         </div>
         <div className="p-10 rounded-2xl border border-gray-200 shadow-md hover:scale-110 transition-transform duration-200">
@@ -72,8 +72,8 @@ export default function Inicio() {
         <div className="w-1/3 pr-10">
           <h1 className="text-4xl mb-8">Por que escolher a Querer Bem?</h1>
           <p className="text-sm mb-8">
-            Porque somos apaixonados pelo que fazemos e acreditamos que a saúde
-            é um direito de todos
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut.
           </p>
           <button
             onClick={() => handleLinkClick("Contato")}

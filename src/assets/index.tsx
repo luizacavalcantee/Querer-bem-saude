@@ -20,7 +20,7 @@ import Computer from './Computador.png';
 import AcessoVascular from './Acesso-vascular.png';
 import Education from './Education.png';
 import POP from './POP.png';
-import Polyana from './Polyana.jpg';
+import Polyana from './Polyana.png';
 import PolyanaCircle from './Polyana-circle.png';
 
 export {

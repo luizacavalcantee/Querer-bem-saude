@@ -66,7 +66,7 @@ export default function ContactSession() {
             </Label>
             <Textarea
             className="bg-background"
-            placeholder="Type your message here."
+            placeholder="Digite sua mensagem aqui..."
             />
         </div>
         <div className="flex items-center gap-2">
