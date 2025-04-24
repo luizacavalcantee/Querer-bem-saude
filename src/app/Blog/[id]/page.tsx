@@ -4,11 +4,13 @@ import { blogPosts } from '@/lib/blog-data';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-interface Params {
-  id: string;
+interface PageProps {
+  params: {
+    id: string;
+  };
 }
 
-export default function BlogPostPage({ params }: { params: Params }) {
+export default function BlogPostPage({ params }: PageProps) {
   const post = blogPosts.find((post) => post.id.toString() === params.id);
 
   if (!post) {
@@ -26,7 +28,6 @@ export default function BlogPostPage({ params }: { params: Params }) {
           Voltar para o blog
         </Link>
 
-        {/* Restante do seu código de renderização */}
         <div className="mb-8">
           <div className="flex flex-wrap items-center gap-2 mb-4">
             {post.categories.map((category, index) => (
