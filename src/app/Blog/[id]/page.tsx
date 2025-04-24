@@ -4,13 +4,12 @@ import { blogPosts } from '@/lib/blog-data';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function BlogPostPage({ params }: PageProps) {
+// Não defina PageProps manualmente - deixe o Next.js inferir
+export default function BlogPostPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const post = blogPosts.find((post) => post.id.toString() === params.id);
 
   if (!post) {
