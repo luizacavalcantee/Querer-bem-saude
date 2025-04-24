@@ -22,6 +22,11 @@ import Education from './Education.png';
 import POP from './POP.png';
 import Polyana from './Polyana.png';
 import PolyanaCircle from './Polyana-circle.png';
+import Blog1 from './Blog1.avif';
+import Blog2 from './Blog2.png';
+import Blog3 from './Blog3.png';
+import Blog4 from './Blog4.jpg';
+import Blog5 from './Blog5.png';
 
 export {
     Aspas,
@@ -48,4 +53,9 @@ export {
     POP,
     Polyana,
     PolyanaCircle,
+    Blog1,
+    Blog2,
+    Blog3,
+    Blog4,
+    Blog5,
 };
