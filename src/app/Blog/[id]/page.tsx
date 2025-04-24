@@ -4,12 +4,16 @@ import { blogPosts } from '@/lib/blog-data';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-// Não defina PageProps manualmente - deixe o Next.js inferir
-export default function BlogPostPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+// Solução alternativa para o problema de tipagem
+type BlogPageProps = {
+  params: {
+    id: string;
+  };
+  searchParams?: Record<string, string | string[] | undefined>;
+};
+
+export default async function BlogPostPage(props: BlogPageProps) {
+  const { params } = props;
   const post = blogPosts.find((post) => post.id.toString() === params.id);
 
   if (!post) {
