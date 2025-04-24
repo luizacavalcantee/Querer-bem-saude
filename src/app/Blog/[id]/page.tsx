@@ -3,18 +3,16 @@ import Image from 'next/image';
 import { blogPosts } from '@/lib/blog-data';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import TopBar from '@/components/TopBar';
+import Footer from '@/components/Footer';
 
-// Solução alternativa para o problema de tipagem
 type BlogPageProps = {
-  params: {
-    id: string;
-  };
-  searchParams?: Record<string, string | string[] | undefined>;
+  params: Promise<{ id: string; }>;
 };
 
-export default async function BlogPostPage(props: BlogPageProps) {
-  const { params } = props;
-  const post = blogPosts.find((post) => post.id.toString() === params.id);
+export default async function BlogPostPage({ params }: BlogPageProps) {
+  const { id } = await params;
+  const post = blogPosts.find((post) => post.id.toString() === id);
 
   if (!post) {
     notFound();
@@ -22,6 +20,8 @@ export default async function BlogPostPage(props: BlogPageProps) {
 
   return (
     <div className="bg-background">
+      <TopBar />
+
       <div className="max-w-4xl mx-auto px-8 py-12">
         <Link 
           href="/Blog" 
@@ -73,6 +73,8 @@ export default async function BlogPostPage(props: BlogPageProps) {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
