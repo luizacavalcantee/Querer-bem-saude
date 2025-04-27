@@ -59,17 +59,17 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-white pt-8 px-4">
-      <div className="container mx-auto flex font-montserrat">
+    <footer className="bg-primary text-white py-8 px-8 md:pt-8 md:px-4 md:py-0">
+      <div className="container mx-auto flex font-montserrat flex-col md:flex-row">
         <Image
           src={LogoRosa}
           alt="Logo Querer Bem"
-          className="rounded-full hover:scale-110 transition-transform duration-200"
+          className="rounded-full hover:scale-110 transition-transform duration-200 hidden md:block"
           width={260}
         />
 
-        <section className="w-full px-[5%] mx-auto gap-6 flex-col flex">
-          <div className="px-[5%] h-fit border-b pb-4">
+        <section className="w-full md:px-18 mx-auto gap-6 flex-col flex">
+          <div className="md:px-14 h-fit border-b pb-4 hidden md:block">
             <nav className="flex justify-between font-montserrat font-medium gap-8 text-lg">
               {["", "Explore", "Contato", "Blog"].map((link) => (
                 <Link
@@ -83,7 +83,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex flex-col w-fit justify-center gap-4 pl-[5%]">
+          <div className="flex flex-col w-fit justify-center gap-4 md:pl-14">
             <a
               href="https://www.instagram.com/quererbemsaude?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
