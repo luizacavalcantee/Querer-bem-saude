@@ -1,4 +1,4 @@
-import BlogSession from "@/components/BlogSession";
+import BlogSession from "@/components/BlogSection";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import TopBar from "@/components/TopBar";

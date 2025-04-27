@@ -5,7 +5,7 @@ import { Capa, Logo, LogoRosa, Polyana, PolyanaCircle } from "@/assets/index";
 import { BookText, HandHelping, Laptop, Megaphone } from "lucide-react";
 import Footer from "@/components/Footer/index";
 import Image from "next/image";
-import GoalsSession from "@/components/GoalsSession";
+import GoalsSession from "@/components/GoalsSection";
 import { usePathname, useRouter } from "next/navigation";
 import ContactForm from "@/components/ContactForm";
 

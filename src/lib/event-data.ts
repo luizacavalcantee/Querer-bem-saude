@@ -1,0 +1,118 @@
+import {
+  Card1,
+  Card2,
+  Card3,
+  Card4,
+  Card5,
+  Card6,
+  Card7,
+  Card8,
+  Card9,
+  Card10,
+  Card11,
+  Card12,
+} from "@/assets/index";
+
+export const eventsData = [
+  {
+    id: 1,
+    imageUrl: Card1,
+    title: "XXI Congresso Brasileiro de Enfermagem em Nefrologia",
+    date: "26 de setembro de 2024",
+    location: "Salvador, BA",
+    linkUrl:
+      "https://storage.googleapis.com/production-hostgator-brasil-v1-0-5/265/1885265/Kb0vL6n9/fbe54bbb28234c45b1a9084eaf095460?fileName=congresso_2024.pdf",
+  },
+  {
+    id: 2,
+    imageUrl: Card2,
+    title:
+      "XX Congresso Brasileiro de  Enfermagem em Nefrologia - Trabalhos premiados",
+    date: "27 de setembro de 2024",
+    location: "Salvador, BA",
+    linkUrl:
+      "https://storage.googleapis.com/production-hostgator-brasil-v1-0-5/265/1885265/Kb0vL6n9/fbe54bbb28234c45b1a9084eaf095460?fileName=congresso_2024.pdf",
+  },
+  {
+    id: 3,
+    imageUrl: Card3,
+    title: "Curso NefrUS - POCUS da SBN",
+    date: "25 de setembro de 2024",
+    location: "Salvador, BA",
+    linkUrl:
+      "https://storage.googleapis.com/production-hostgator-brasil-v1-0-5/265/1885265/Kb0vL6n9/98fe98ff16ac48619e7972ce6b260ae7?fileName=cursonefrus_pocus.pdf",
+  },
+  {
+    id: 4,
+    imageUrl: Card4,
+    title: "Segurança do Paciente em pauta",
+    date: "23 de setembro de 2024",
+    location: "Instituto Valquírea Arenas",
+    linkUrl: "https://www.youtube.com/watch?feature=shared&v=WNqA1Z5ymeY",
+  },
+  {
+    id: 5,
+    imageUrl: Card5,
+    title: "Fragilidade na DRC",
+    date: "25 de outubro de 2024",
+    location: "NESPI, BA",
+    linkUrl: "",
+  },
+  {
+    id: 6,
+    imageUrl: Card6,
+    title: "Cuidados Paliativos na DRC",
+    date: "29 de outubro de 2024",
+    location: "Recife, PE - SES",
+    linkUrl: "https://www.youtube.com/ESPPE",
+  },
+  {
+    id: 7,
+    imageUrl: Card7,
+    title: "Autocuidado no pós transplante renal",
+    date: "8 de junho de 2024",
+    location: "Recife, PE - UPE",
+    linkUrl:
+      "https://open.spotify.com/episode/6XRIjO2EtEm9143kt30pXw?si=4CnX-5w3SiC263FJ2P8o9g&nd=1&dlsi=ad58160dcdf14c34",
+  },
+  {
+    id: 8,
+    imageUrl: Card8,
+    title: "SAVE, 2025",
+    date: "13 de fevereiro de  2025",
+    location: "São Paulo, SP - Renaissance",
+    linkUrl: "",
+  },
+  {
+    id: 9,
+    imageUrl: Card9,
+    title: "Doppler no Acesso Vascular",
+    date: "12 de fevereiro de 2025",
+    location: "São Paulo, SP - SAVE",
+    linkUrl: "",
+  },
+  {
+    id: 10,
+    imageUrl: Card10,
+    title: "Dia Mundial do Rim",
+    date: "13 de março de 2025",
+    location: "Youtube",
+    linkUrl: "https://www.youtube.com/watch?v=LkldQRr89to",
+  },
+  {
+    id: 11,
+    imageUrl: Card11,
+    title: "Simpósio de Acesso Vascular - SINNEAV",
+    date: "29 de março de 2025",
+    location: "Recife, PE",
+    linkUrl: "",
+  },
+  {
+    id: 12,
+    imageUrl: Card12,
+    title: "Curso de US aplicada para enfermeiros",
+    date: "17 de agosto de 2025 ",
+    location: "Recife/PE",
+    linkUrl: "",
+  },
+];

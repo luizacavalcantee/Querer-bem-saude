@@ -1,4 +1,3 @@
-// src/lib/blog-data.ts
 import { Blog1, Blog2, Blog3, Blog4, Blog5 } from "@/assets";
 
 export interface BlogPost {
@@ -8,7 +7,7 @@ export interface BlogPost {
     categories: string[];
     date: string;
     image: any;
-    content: string; // Conteúdo completo do post
+    content: string;
 }
 
 export const blogPosts: BlogPost[] = [
