@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/index";
 import Image from "next/image";
 import GoalsSession from "@/components/GoalsSession";
 import { usePathname, useRouter } from "next/navigation";
-import ContactSession from "@/components/ContactSession";
+import ContactForm from "@/components/ContactForm";
 
 export default function Inicio() {
   const router = useRouter();
@@ -125,7 +125,29 @@ export default function Inicio() {
         </div>
       </section>
 
-      <ContactSession />
+      <section className="bg-background flex py-20 px-12 gap-12">
+      <div className="flex flex-col w-1/3 text-justify gap-4">
+        <div className="bg-background relative">
+          <Image
+            src={LogoRosa}
+            alt="Logo"
+            className="w-16 h-16 absolute rounded-full outline-5 outline-background left-13 top-0"
+          />
+          <Image
+            src={PolyanaCircle}
+            alt="Polyana"
+            className="w-16 h-16 rounded-full"
+          />
+        </div>
+        <h1 className="text-3xl font-semibold">Como posso te ajudar?</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <ContactForm />
+    </section>
       <Footer />
     </div>
   );
