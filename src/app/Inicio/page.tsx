@@ -1,22 +1,13 @@
-"use client";
-
 import TopBar from "@/components/TopBar/index";
 import { Logo, LogoRosa, PolyanaCircle } from "@/assets/index";
 import Footer from "@/components/Footer/index";
 import Image from "next/image";
 import GoalsSection from "@/components/GoalsSection";
-import { useRouter } from "next/navigation";
 import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/HeroSection";
 import ParticularitySection from "@/components/ParticularitySection";
 
 export default function Inicio() {
-  const router = useRouter();
-
-  const handleLinkClick = (linkName: string) => {
-    router.push(`/${linkName}`);
-  };
-
   return (
     <div className="h-screen w-screen relative overflow-x-hidden font-montserrat">
       <TopBar />
