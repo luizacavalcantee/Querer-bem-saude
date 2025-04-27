@@ -32,8 +32,7 @@ export default function HeroSection() {
             className="flex items-center justify-center px-3 py-2 gap-2 mt-1 md:mt-4 md:px-6 md:py-4 bg-primary text-white rounded-4xl hover:bg-primary-hover hover:scale-105 transition duration-200"
             >
             <MessageCircleMore
-              className="color-white"
-              size={window.innerWidth >= 768 ? 30 : 20}
+              className="color-white w-5 h-5 md:w-7 md:h-7"
               strokeWidth={2.5}
             />
             <span className="text-sm font-bold md:text-lg">
