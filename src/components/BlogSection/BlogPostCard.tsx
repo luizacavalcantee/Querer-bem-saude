@@ -4,7 +4,7 @@ import { BlogPost } from "@/lib/blog-data";
 
 export function BlogPostCard({ post }: { post: BlogPost }) {
   return (
-    <article className="border-b border-[#26282a]/20 pb-6 flex gap-6">
+    <article className="border-b border-[#26282a]/20 pb-6 flex flex-col md:flex-row gap-6">
       <div className="flex-shrink-0 w-40 h-40 overflow-hidden border border-[#26282a]/10">
         <Image
           src={post.image}

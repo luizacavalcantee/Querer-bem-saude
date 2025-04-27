@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { BlogPostCard } from "./BlogPostCard";
 import { blogPosts, blogCategories } from "@/lib/blog-data";
 
-export default function BlogSession() {
+export default function BlogSection() {
   const [activeTag, setActiveTag] = useState("Todos");
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -20,9 +20,9 @@ export default function BlogSession() {
   });
 
   return (
-    <div className="bg-background px-12 py-12">
-      <nav className="flex items-center justify-between w-full pb-4 border-b-1 border-[#26282a]/30">
-        <div className="flex items-center gap-6">
+    <div className="bg-background px-4 py-8 md:px-12 md:py-12">
+      <nav className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-0 justify-between w-full pb-4 border-b-1 border-[#26282a]/30">
+        <div className="flex flex-wrap items-center gap-6">
           {blogCategories.map((category) => (
             <span
               key={category}
@@ -36,7 +36,7 @@ export default function BlogSession() {
           ))}
         </div>
 
-        <div className="relative w-64">
+        <div className="relative w-64 self-start">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#26282a]" />
           <Input
             placeholder="Pesquisar por..."

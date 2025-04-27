@@ -27,6 +27,7 @@ import Blog2 from './Blog2.png';
 import Blog3 from './Blog3.png';
 import Blog4 from './Blog4.jpg';
 import Blog5 from './Blog5.png';
+import CapaMobile from './Capa-mobile.png';
 
 export {
     Aspas,
@@ -58,4 +59,5 @@ export {
     Blog3,
     Blog4,
     Blog5,
+    CapaMobile,
 };
