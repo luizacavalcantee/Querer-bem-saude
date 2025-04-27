@@ -21,7 +21,7 @@ import {
   Card12,
   Polyana,
 } from "@/assets/index";
-import NewsletterSession from "@/components/NewsletterSession";
+import Newsletter from "@/components/Newsletter";
 
 const eventsData = [
   {
@@ -220,7 +220,9 @@ export default function Explore() {
         </div>
       </section>
 
-      <NewsletterSession />
+      <div className="bg-background px-4 md:px-12 py-12 md:py-20 flex items-center justify-center">
+        <Newsletter />
+      </div>
 
       <Footer />
     </div>
