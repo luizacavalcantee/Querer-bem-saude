@@ -23,8 +23,8 @@ export default function Inicio() {
 
       <HeroSection />
 
-      <section className="bg-background flex flex-col md:flex-row justify-between items-center gap-10 md:gap-32 py-20 px-4 md:px-12">
-        <div className="flex flex-col gap-8 text-md text-justify">
+      <section className="bg-background flex flex-col md:flex-row justify-between items-center gap-10 md:gap-32 py-10 md:py-20 px-4 md:px-12">
+        <div className="flex flex-col gap-2 md:gap-8 text-md text-justify">
           <p className="font-medium">
             Uma consultoria que busca fortalecer a assistência à saúde através
             de educação contínua e comunicação empática
@@ -34,11 +34,11 @@ export default function Inicio() {
             <strong className="font-bold text-primary-hover">EXPLORE</strong> e
             me conta como posso lhe ajudar
           </p>
-          <h1 className="text-primary text-3xl font-semibold text-start">
+          <h1 className="text-primary mt-2 md:mt-0 text-xl md:text-3xl font-semibold text-start">
             Como QUERER BEM SAÚDE pode fazer parte da sua história?
           </h1>
         </div>
-        <div className="p-10 rounded-2xl border border-gray-200 shadow-md hover:scale-110 transition-transform duration-200">
+        <div className="hidden md:block p-10 rounded-2xl border border-gray-200 shadow-md hover:scale-110 transition-transform duration-200">
           <Image src={Logo} alt="Logo Querer Bem" className="w-80" />
         </div>
       </section>

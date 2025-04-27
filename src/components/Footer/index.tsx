@@ -59,7 +59,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-white py-8 px-8 md:pt-8 md:px-4 md:py-0">
+    <footer className="bg-primary text-white py-6 px-4 md:pt-8 md:px-4 md:py-0">
       <div className="container mx-auto flex font-montserrat flex-col md:flex-row">
         <Image
           src={LogoRosa}
@@ -83,14 +83,14 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex flex-col w-fit justify-center gap-4 md:pl-14">
+          <div className="flex flex-col w-fit justify-center gap-2 md:gap-4 md:pl-14">
             <a
               href="https://www.instagram.com/quererbemsaude?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               className="flex gap-2 items-center"
             >
-              <Instagram size={28} />
-              <p>Instagram</p>
+              <Instagram size={24} />
+              <p className="text-sm md:text-base">Instagram</p>
             </a>
 
             <a
@@ -99,21 +99,21 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex gap-2 items-center"
             >
-              <LinkedinIcon size={28} />
-              <p className="pt-1">Linkedin</p>
+              <LinkedinIcon size={24} />
+              <p className="text-sm md:text-base pt-1">Linkedin</p>
             </a>
 
             <a
               href="mailto:polyana@quererbemsaude.com.br"
               className="flex gap-2 items-center"
             >
-              <Mail size={28} />
-              <p>polyana@quererbemsaude.com.br</p>
+              <Mail size={24} />
+              <p className="text-sm md:text-base">polyana@quererbemsaude.com.br</p>
             </a>
 
             <div className="flex gap-2 items-center">
-              <MapPin size={28} />
-              <p>Recife, PE</p>
+              <MapPin size={24} />
+              <p className="text-sm md:text-base">Recife, PE</p>
             </div>
           </div>
         </section>

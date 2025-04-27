@@ -14,7 +14,7 @@ export default function ContactForm() {
           <Label htmlFor="name" className="text-sm font-medium mb-2">
             Nome
           </Label>
-          <Input id="name" className="bg-background" />
+          <Input id="name" className="bg-background h-10" />
         </div>
         <div className="flex flex-col w-full md:w-1/2">
           <Label htmlFor="surname" className="text-sm font-medium mb-2">
@@ -42,7 +42,7 @@ export default function ContactForm() {
           Sua mensagem
         </Label>
         <Textarea
-          className="bg-background"
+          className="bg-background placeholder:text-sm"
           placeholder="Digite sua mensagem aqui..."
         />
       </div>

@@ -23,8 +23,8 @@ export default function Contato() {
               className="w-16 h-16 rounded-full"
             />
           </div>
-          <h1 className="text-2xl md:text-3xl font-semibold">Como posso te ajudar?</h1>
-          <p>
+          <h1 className="text-xl md:text-3xl font-semibold">Como posso te ajudar?</h1>
+          <p className="text-sm md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit.
           </p>
