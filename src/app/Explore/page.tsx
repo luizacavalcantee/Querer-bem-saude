@@ -4,14 +4,14 @@ import Image from "next/image";
 import { Polyana } from "@/assets/index";
 import Newsletter from "@/components/Newsletter";
 import ConnectionSection from "@/components/ConnectionSection";
-import MomentsSection from "@/components/MomentsSection";
+import EventsSection from "@/components/EventsSection";
 
 export default function Explore() {
   return (
     <div className="bg-background">
       <TopBar />
 
-      <section className="flex items-center justify-center gap-20 px-12 py-12 bg-background">
+      <section className="flex flex-col md:flex-row items-center justify-center gap-20 px-4 md:px-12 py-12 bg-background">
         <div className="flex flex-col h-full w-full gap-8">
           <h1 className="text-3xl font-semibold text-[#F95784]">
             Quem faz parte da Querer Bem Saúde?
@@ -34,11 +34,11 @@ export default function Explore() {
         <Image
           src={Polyana}
           alt="CEO da Querer Bem"
-          className="w-1/3 rounded-2xl"
+          className="w-full md:w-1/3 rounded-2xl"
         />
       </section>
 
-      <MomentsSection />
+      <EventsSection />
 
       <ConnectionSection />
 
