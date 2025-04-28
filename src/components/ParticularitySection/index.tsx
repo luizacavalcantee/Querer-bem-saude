@@ -26,7 +26,7 @@ export default function ParticularitySection() {
         </button>
       </div>
 
-      <div className="flex-1 flex flex-col md:flex-row justify-between gap-10 md:gap-20">
+      <div className="flex-1 flex flex-col md:flex-row justify-between gap-6 md:gap-20">
         <div className="flex-1 md:max-w-[300px]">
           <div className="flex md:flex-col items-center md:items-start gap-2 md:gap-0">
             <Laptop
@@ -36,7 +36,7 @@ export default function ParticularitySection() {
             />
             <h2 className="text-xl font-bold md:mt-4">Consultoria</h2>
           </div>
-          <p className="text-sm mt-4 text-justify">
+          <p className="text-sm mt-2 md:mt-4 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -51,7 +51,7 @@ export default function ParticularitySection() {
             />
             <h2 className="text-xl font-bold md:mt-4">Ensino</h2>
           </div>
-          <p className="text-sm mt-4 text-justify">
+          <p className="text-sm mt-2 md:mt-4 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -66,7 +66,7 @@ export default function ParticularitySection() {
             />
             <h2 className="text-xl font-bold md:mt-4">Cuidado</h2>
           </div>
-          <p className="text-sm mt-4 text-justify">
+          <p className="text-sm mt-2 md:mt-4 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

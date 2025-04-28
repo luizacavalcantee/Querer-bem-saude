@@ -1,5 +1,5 @@
-import { MapPin } from 'lucide-react';
-import Image from 'next/image';
+import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 interface EventCardProps {
   imageUrl: string;
@@ -9,16 +9,29 @@ interface EventCardProps {
   linkUrl: string;
 }
 
-export default function EventCard({ imageUrl, title, date, location, linkUrl }: EventCardProps) {
+export default function EventCard({
+  imageUrl,
+  title,
+  date,
+  location,
+  linkUrl,
+}: EventCardProps) {
   return (
-    <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="block">
-      <div className="flex md:flex-col justify-between bg-background h-full p-4 rounded-2xl shadow-md md:hover:scale-105 transition-transform duration-200">
-        <div className="relative w-full aspect-square"> {/* Container com aspecto quadrado */}
-          <Image 
-            src={imageUrl} 
-            alt={title} 
+    <a
+      href={linkUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <div className="flex flex-col justify-between bg-background h-full p-4 rounded-2xl shadow-md hover:scale-105 transition-transform duration-200">
+        <div className="relative w-full aspect-square">
+          {" "}
+          {/* Container com aspecto quadrado */}
+          <Image
+            src={imageUrl}
+            alt={title}
             fill
-            className="rounded-xl object-cover" 
+            className="rounded-xl object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>

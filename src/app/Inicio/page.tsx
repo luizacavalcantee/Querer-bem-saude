@@ -2,10 +2,11 @@ import TopBar from "@/components/TopBar/index";
 import { Logo, LogoRosa, PolyanaCircle } from "@/assets/index";
 import Footer from "@/components/Footer/index";
 import Image from "next/image";
-import GoalsSection from "@/components/GoalsSection";
 import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/HeroSection";
 import ParticularitySection from "@/components/ParticularitySection";
+import GoalCard from "@/components/GoalCard";
+import { goalsData } from "@/lib/goals-data";
 
 export default function Inicio() {
   return (
@@ -34,7 +35,11 @@ export default function Inicio() {
         </div>
       </section>
 
-      <GoalsSection />
+      <section className="bg-background flex flex-col items-center justify-center gap-8 px-4 md:px-12 pb-20 md:pb-30">
+        {goalsData.map((goal, index) => (
+          <GoalCard key={index} {...goal} />
+        ))}
+      </section>
 
       <ParticularitySection />
 
