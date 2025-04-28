@@ -21,12 +21,11 @@ export default function EventCard({
       href={linkUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="block"
+      className="block h-full"
     >
       <div className="flex flex-col justify-between bg-background h-full p-4 rounded-2xl shadow-md md:hover:scale-105 transition-transform duration-200">
         <div className="relative w-full aspect-square">
           {" "}
-          {/* Container com aspecto quadrado */}
           <Image
             src={imageUrl}
             alt={title}
@@ -40,7 +39,7 @@ export default function EventCard({
           <span className="text-sm mt-1 block">{date}</span>
           <div className="flex items-center gap-1 mt-2 bg-primary-hover text-white py-1 px-2 rounded-full w-fit text-sm">
             <MapPin size={18} />
-            <span>{location}</span>
+            <span className="truncate max-w-46">{location}</span>
           </div>
         </div>
       </div>
