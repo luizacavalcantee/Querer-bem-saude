@@ -22,7 +22,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
     <div className="bg-background">
       <TopBar />
 
-      <div className="max-w-4xl mx-auto px-8 py-12">
+      <div className="max-w-4xl mx-auto px-4 md:px-8 py-12">
         <Link 
           href="/Blog" 
           className="flex items-center text-primary mb-6 hover:underline"
@@ -44,7 +44,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
             <span className="text-sm text-[#26282a]/50 ml-2">{post.date}</span>
           </div>
 
-          <h1 className="text-3xl font-bold text-[#26282a] mb-6">{post.title}</h1>
+          <h1 className="text-2xl md:text-3xl font-bold text-[#26282a] mb-6">{post.title}</h1>
 
           <div className="w-full h-96 relative rounded-lg overflow-hidden border border-[#26282a]/10 mb-8">
             <Image
@@ -59,7 +59,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
         </div>
 
         <div 
-          className="prose max-w-none text-[#26282a]"
+          className="text-justify max-w-none text-[#26282a]"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 

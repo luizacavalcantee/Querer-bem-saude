@@ -23,7 +23,7 @@ export default function EventCard({
       rel="noopener noreferrer"
       className="block"
     >
-      <div className="flex flex-col justify-between bg-background h-full p-4 rounded-2xl shadow-md hover:scale-105 transition-transform duration-200">
+      <div className="flex flex-col justify-between bg-background h-full p-4 rounded-2xl shadow-md md:hover:scale-105 transition-transform duration-200">
         <div className="relative w-full aspect-square">
           {" "}
           {/* Container com aspecto quadrado */}
