@@ -7,7 +7,7 @@ export default function GoalsSection() {
     <section className="bg-background flex flex-col items-center justify-center gap-8 px-4 md:px-12 pb-20 md:pb-30">
       <section className="flex flex-col md:flex-row w-full md:h-79 rounded-2xl border-2 border-light-gray overflow-hidden gap-8">
         <div className="flex flex-col md:w-1/2 md:py-10 md:pl-10 px-4 py-6">
-          <h2 className="text-2xl font-semibold mb-auto">
+          <h2 className="text-xl md:text-2xl font-semibold mb-auto">
             Consultoria em saúde
           </h2>
           <p className="text-base mb-4">
@@ -62,7 +62,7 @@ export default function GoalsSection() {
 
       <section className="flex flex-col md:flex-row w-full md:h-79 rounded-2xl border-2 border-light-gray overflow-hidden gap-8">
         <div className="flex flex-col md:w-1/2 md:py-10 md:pl-10 px-4 py-6">
-          <h2 className="text-2xl font-semibold mb-auto">
+          <h2 className="text-xl md:text-2xl font-semibold mb-auto">
             Gestão do Acesso Vascular para hemodiálise
           </h2>
           <p className="text-base mb-4">
@@ -109,7 +109,7 @@ export default function GoalsSection() {
 
       <section className="flex flex-col md:flex-row w-full md:h-79 rounded-2xl border-2 border-light-gray overflow-hidden gap-8">
         <div className="flex flex-col md:w-1/2 md:py-10 md:pl-10 px-4 py-6">
-          <h2 className="text-2xl font-semibold mb-auto">
+          <h2 className="text-xl md:text-2xl font-semibold mb-auto">
             Procedimentos Operacionais Padrão - POP
           </h2>
           <p className="text-base mb-4">
@@ -136,7 +136,7 @@ export default function GoalsSection() {
 
       <section className="flex flex-col md:flex-row w-full md:h-79 rounded-2xl border-2 border-light-gray overflow-hidden gap-8">
         <div className="flex flex-col md:w-1/2 md:py-10 md:pl-10 px-4 py-6">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">
             Atualização e educação em saúde
           </h2>
           <p className="text-base mb-4">

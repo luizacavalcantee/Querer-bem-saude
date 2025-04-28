@@ -16,11 +16,11 @@ export default function Inicio() {
 
       <section className="bg-background flex flex-col md:flex-row justify-between items-center gap-10 md:gap-32 py-10 md:py-20 px-4 md:px-12">
         <div className="flex flex-col gap-2 md:gap-8 text-md text-justify">
-          <p className="font-medium">
+          <p className="text-sm md:text-base font-medium">
             Uma consultoria que busca fortalecer a assistência à saúde através
             de educação contínua e comunicação empática
           </p>
-          <p className="font-medium">
+          <p className="text-sm md:text-base font-medium">
             Saiba mais acessando a seção{" "}
             <strong className="font-bold text-primary-hover">EXPLORE</strong> e
             me conta como posso lhe ajudar
